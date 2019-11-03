@@ -21,5 +21,3 @@ The game will prompt you for your name. Enter it and hit the start button. The g
 -   React
 -   Redux
 -   Styled Components
--   TypeScript
--   
