@@ -20,4 +20,12 @@ The game will prompt you for your name. Enter it and hit the start button. The g
 -   Zeit Next
 -   React
 -   Redux
+-   React-Redux
 -   Styled Components
+
+## Other Notable Mentions
+
+This project aims to effectively implement:
+
+-   Mobile-first development
+-   Testing for behavior only - not for aesthetic elements
