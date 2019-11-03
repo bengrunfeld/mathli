@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import { createStore, combineReducers } from "redux";
 import { Heading } from "./index.styles";
 import Text from "./Text";
 
-function counter(state = 5, action) {
+function counterReducer(state = 5, action) {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
@@ -16,7 +16,8 @@ function counter(state = 5, action) {
   }
 }
 
-let store = createStore(counter);
+const rootReducer = combineReducers({ counter: counterReducer });
+let store = createStore(rootReducer);
 
 const Home = () => (
   <div>

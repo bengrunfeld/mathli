@@ -11,7 +11,7 @@ const Text = ({ counter }) => {
 
 const mapStateToProps = state => {
   console.log(state);
-  return { counter: state };
+  return { counter: state.counter };
 };
 
 export default connect(mapStateToProps)(Text);
