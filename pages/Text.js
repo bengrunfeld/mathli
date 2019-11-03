@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+import React from "react";
 
 const Text = ({ counter }) => {
   console.log("---->", counter);
@@ -11,7 +12,7 @@ const Text = ({ counter }) => {
 
 const mapStateToProps = state => {
   console.log(state);
-  return { counter: state.counter };
+  return { counter: state };
 };
 
 export default connect(mapStateToProps)(Text);

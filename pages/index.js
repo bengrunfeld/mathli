@@ -5,7 +5,7 @@ import { createStore, combineReducers } from "redux";
 import { Heading } from "../components/index.styles";
 import Text from "./Text";
 
-function counterReducer(state = 5, action) {
+function counter(state = 5, action) {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
@@ -16,21 +16,12 @@ function counterReducer(state = 5, action) {
   }
 }
 
-const rootReducer = combineReducers({ counter: counterReducer });
-let store = createStore(rootReducer);
+let store = createStore(counter);
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>Mathli - Math Game</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <Provider store={store}>
-      <Heading>Hello</Heading>
-      <Text />
-    </Provider>
-  </div>
+  <Provider store={store}>
+    <Text />
+  </Provider>
 );
 
 export default Home;
