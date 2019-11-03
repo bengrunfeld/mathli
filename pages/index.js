@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
-import { Heading } from "./index.styles";
+import { Heading } from "../components/index.styles";
 import Text from "./Text";
 
 function counterReducer(state = 5, action) {
