@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
 import { Heading } from "../components/index.styles";
-import Text from "./Text";
+import Text from "../components/Text";
 
 function counter(state = 5, action) {
   switch (action.type) {

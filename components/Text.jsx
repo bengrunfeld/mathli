@@ -15,4 +15,9 @@ const mapStateToProps = state => {
   return { counter: state };
 };
 
-export default connect(mapStateToProps)(Text);
+const mapDispatchToProps = {};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Text);
