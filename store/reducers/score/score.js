@@ -1,4 +1,6 @@
-function counter(state = 5, action) {
+import { INCREMENT, DECREMENT } from "./types";
+
+function score(state = 0, action) {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
@@ -9,4 +11,4 @@ function counter(state = 5, action) {
   }
 }
 
-export default counter;
+export default score;

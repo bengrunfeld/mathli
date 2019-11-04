@@ -1,4 +1,4 @@
-import counter from "./counter/counter";
+import { score } from "./score";
 import { time } from "./time";
 
-export default { counter, time };
+export default { score, time };

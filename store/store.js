@@ -1,8 +1,8 @@
 import { createStore, combineReducers } from "redux";
 import reducers from "./reducers";
 
-const initialState = { time: 8 };
+const initialState = { time: 60, score: 0 };
 
-let store = createStore(combineReducers(reducers), initialState);
+const store = createStore(combineReducers(reducers), initialState);
 
 export default store;
