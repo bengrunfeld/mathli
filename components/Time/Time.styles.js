@@ -6,4 +6,6 @@ export const TimeLeft = styled.p`
   color: darkred;
 `;
 
-export const BoxTitle = styled.h2``;
+export const BoxTitle = styled.h2`
+  font-weight: 400;
+`;
